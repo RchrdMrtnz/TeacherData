@@ -5,8 +5,12 @@ from config import config
 app=Flask(__name__)
 
 @app.route('/')
-def init():
-    return render_template('layout.html')
+def home():
+    return render_template('home.html')
+
+@app.route('/login')
+def login():
+    return render_template('auth/login.html')
 
 if __name__ == '__main__':
     app.config.from_object(config['development'])
