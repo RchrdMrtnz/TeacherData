@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 from config import config
 
 
@@ -8,9 +8,15 @@ app=Flask(__name__)
 def home():
     return render_template('home.html')
 
-@app.route('/login')
+@app.route('/login',methods=['GET','POST'])
 def login():
-    return render_template('auth/login.html')
+    if request.method=='POST':
+        print(request.form['user'])
+        return render_template('auth/login.html')
+    else:
+        return render_template('auth/login.html')
+
+
 
 def page_not_found(error):
     return render_template('404.html'), 404
