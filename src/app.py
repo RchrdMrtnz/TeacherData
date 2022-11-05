@@ -16,6 +16,7 @@ def home():
 
 @app.route('/login',methods=['GET','POST'])
 def login():
+    data={'nouser':True}
     if request.method == 'POST':
         username=request.form['username']
         password=request.form['password']
@@ -25,11 +26,11 @@ def login():
             if logged_user.password:
                 return redirect(url_for('home'))
             else:
-                return render_template('auth/login.html')
+                return render_template('auth/login.html',data=data)
         else:
-            return render_template('auth/login.html')
+            return render_template('auth/login.html',data=data)
     else:
-        return render_template('auth/login.html')
+        return render_template('auth/login.html',data=False)
     
 
 
