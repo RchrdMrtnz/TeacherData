@@ -5,7 +5,9 @@
 
 
 {% block body%} 
-<h1>app</h1> 
-<A HREF="{{ url_for('login') }}"> login </A>
+
+
+<h1>Bienvenido, {{ current_user.fullname }}</h1>
+
 
 {% endblock %}
