@@ -12,8 +12,8 @@ app=Flask(__name__)
 db=MySQL(app)
 
 login_manager_app=LoginManager(app)
-
-@login_manager_app.user_loader(id)
+                                                
+@login_manager_app.user_loader
 def load_user(id):
     return ModelUser.get_by_id(db, id)
 

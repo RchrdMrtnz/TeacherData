@@ -22,7 +22,7 @@ class ModelUser():
         try:
             cursor = db.connection.cursor()
             sql = f"""SELECT id, username, fullname FROM users 
-                    WHERE id = '{id}'"""
+                    WHERE id = {id}"""
             cursor.execute(sql)
             row = cursor.fetchone()
             if row != None:
