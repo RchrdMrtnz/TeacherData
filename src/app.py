@@ -31,7 +31,7 @@ def login():
         logged_user=ModelUser.login(db,user)
         if logged_user != None:
             if logged_user.password:
-                logged_user(login_user)
+                login_user(logged_user)
                 return redirect(url_for('system'))
             else:
                 return render_template('auth/login.html',data=data)
