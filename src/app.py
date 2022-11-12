@@ -41,8 +41,15 @@ def login():
         return render_template('auth/login.html',data=False)
 
 @app.route('/app')
+@login_required
 def system():
     return render_template('system.html')
+
+@app.route('/logout')
+def logout():
+    logout_user()
+    return redirect(url_for('login'))
+
 
 def page_not_found(error):
     return render_template('404.html'), 404
