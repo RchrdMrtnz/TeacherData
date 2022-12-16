@@ -1,0 +1,10 @@
+{% extends './layout.html' %}
+
+{% block title%} unauthorised {% endblock %}
+
+{% block body%}
+<h1 style="text-align: center">401 <br>The Page You Are Loking Is Not Available<br> You Are Unauthorised<br> </h1>
+<A HREF="{{ url_for('home') }}"> home </A>
+
+
+{% endblock %}

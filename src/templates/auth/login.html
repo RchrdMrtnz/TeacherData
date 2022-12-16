@@ -4,6 +4,7 @@
 
 {% block body%} 
 <form class="form-signin" action="/login" method="POST">
+    <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
     <input type="hidden">
     <div>
     <input type="text" id="username" name="username" placeholder="Username">

@@ -1,15 +1,19 @@
 from flask import Flask, render_template, request, redirect, flash, url_for
 from flask_mysqldb import MySQL
 from flask_login import LoginManager, login_user, logout_user, login_required
+from flask_wtf.csrf import CSRFProtect
 from config import config
+
 #models
 from models.ModelUser import ModelUser
 #entities
 from models.entities.User import User
 
-app=Flask(__name__)
+app = Flask(__name__)
 
-db=MySQL(app)
+db = MySQL(app)
+
+csfr = CSRFProtect()
 
 login_manager_app=LoginManager(app)
                                                 
@@ -54,7 +58,12 @@ def logout():
 def page_not_found(error):
     return render_template('404.html'), 404
 
+def unauthorised(error):
+    return render_template('unauthorised.html'), 401
+
 if __name__ == '__main__':
     app.config.from_object(config['development'])
+    csfr.init_app(app)
     app.register_error_handler(404,page_not_found)
+    app.register_error_handler(401,unauthorised)
     app.run()
