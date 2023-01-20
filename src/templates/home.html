@@ -24,4 +24,58 @@
     <button class="header__btn">Ingresar</button>
 </header>
 
+<!--*SLIDER*-->
+
+<section class="slider">
+    <div class="slider__container container">
+    <!--Arrow left-->
+        <img src="{{ url_for('static',filename='img/slider__home-page/arrow-left-solid.svg') }}" alt="arrow-left"> 
+
+    <!--Section slider 1-->
+        <section class="slider__body" data-id="1">
+            <div class="slider__texts">
+                <h2 class="slider__subtitle"></h2>
+                <p class="slider__review">
+
+                </p>
+            </div>
+
+            <figure class="slider__img">
+                <img src="{{ url_for('static',filename='img/slider__home-page/slider__img-1.jpg') }}" alt="">
+            </figure>
+        </section>
+
+    <!--Section slider 2-->
+                <section class="slider__body" data-id="2">
+                    <div class="slider__texts">
+                        <h2 class="slider__subtitle"></h2>
+                        <p class="slider__review">
+        
+                        </p>
+                    </div>
+        
+                    <figure class="slider__img">
+                        <img src="{{ url_for('static',filename='img/slider__home-page/slider__img-2.jpg') }}" alt="">
+                    </figure>
+                </section>
+
+    <!--Section slider 3-->
+        <section class="slider__body" data-id="3">
+            <div class="slider__texts">
+                <h2 class="slider__subtitle"></h2>
+                <p class="slider__review">
+
+                </p>
+            </div>
+
+            <figure class="slider__img">
+                <img src="{{ url_for('static',filename='img/slider__home-page/slider__img-3.jpg') }}" alt="">
+            </figure>
+        </section>
+            <!--Arrow right-->
+       <img src="{{ url_for('static',filename='img/slider__home-page/arrow-right-solid.svg') }}" alt="arrow-right"> 
+    </div>
+</section>
+
+
 {% endblock %}

@@ -79,13 +79,13 @@ a{
 
 .header__btn { 
   width: 100px;
-  height: 42px;
+  height: 40px;
   background: #FFF;
   border-radius: 50px;
   border: 2px solid var(--second-color);
   color: var(--second-color);
   font-weight: 600;
-  font-size: var(--default);
+  font-size: var(--small);
   cursor: pointer;
   transition: .3s;
 }
