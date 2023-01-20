@@ -80,6 +80,7 @@ a{
   font-weight: 600;
   font-size: var(--default);
   cursor: pointer;
+  transition: .3s;
 }
 
 .header__btn:hover {
