@@ -1,0 +1,90 @@
+:root {
+    /* font */
+    font-size: 62.5%; /* (62.5/100) * 16px = 10px */
+    --small: 1.4rem; /* 14px */
+    --default: 1.6rem; /* 16px */
+    --large: 2.4rem; /* 24px */
+
+    /* colors */
+    --bg-dark-color: #080C14;
+    --text-color: #0E1422;
+    --text-second-color: rgba(14, 20, 34, 0.80); 
+    --text-third-color: rgba(14, 20, 34, 0.66);
+    --text-fourth-color: rgba(14, 20, 34, 0.50);
+    --first-color: #3375E9;
+    --second-color: rgba(51, 117, 232, 0.66); /*Para las líneas y texto definido en azul en el diseño*/
+    --border-color: #8D8D8D;
+    --bg-gray-color: #EEEEEE;
+  }
+
+     /* Colores del calendario de asistencias
+   #D7A9FF - Días libres
+   #FFEF82 - Días festivos
+   #F96666 - Inasistencias
+  */
+
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Fira Sans', sans-serif;
+}
+
+a{
+  text-decoration: none;
+}
+
+/**HEADER**/
+
+  .header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px 10px;
+    height: 120px;
+  }
+
+  .header__logo > img{
+    width: 120px;
+    height: 120px;
+  }
+/* nav */
+  .menu__list-item {
+    display: inline-block;
+    padding: 0 30px;
+    font-size: var(--default);
+  }
+
+  .menu__list-item > a {
+    color: #666;
+    
+  }
+
+  .active > a {
+    color: var(--text-color);
+    font-weight: 600;
+  }
+
+/* btn */
+
+.header__btn { 
+  width: 100px;
+  height: 42px;
+  background: #FFF;
+  border-radius: 50px;
+  border: 2px solid var(--second-color);
+  color: var(--second-color);
+  font-weight: 600;
+  font-size: var(--default);
+  cursor: pointer;
+}
+
+.header__btn:hover {
+  background: var(--first-color);
+  color: #FFF;
+}
+
+/** END HEADER **/

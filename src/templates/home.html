@@ -9,15 +9,15 @@
 <header class="header">
     <!-- LOGO -->
     <a href="#" class="header__logo">
-        <img src="{{ url_for('static',filename='img/logo/logo.png') }}" alt="logo del ministerio de educación">
+        <img src="{{ url_for('static',filename='img/logo/logo.png') }}" alt="logo del ministerio de educación" class="header__logo-img">
     </a>
     <!-- NAV -->
     <nav class="header__menu">
         <ul class="menu__list">
-            <li class="menu__list-item">Inicio</li>
-            <li class="menu__list-item">Información</li>
-            <li class="menu__list-item">Noticias</li>
-            <li class="menu__list-item">Ayuda</li>
+            <li class="menu__list-item active"><a href="#">Inicio</a></li>
+            <li class="menu__list-item"><a href="#">Información</a></li>
+            <li class="menu__list-item"><a href="#">Noticias</a></li>
+            <li class="menu__list-item"><a href="#">Ayuda</a></li>
         </ul>
     </nav>
     <!-- BTN -->
