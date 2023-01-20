@@ -65,22 +65,14 @@ a{
 
   .menu__list-item > a {
     color: var(--text-color);
-    position: relative;
+    background-image: linear-gradient(180deg,transparent 65%,var(--first-color) 0);
+    background-repeat: no-repeat;
+    background-size: 0 100%;
+    padding-bottom: 2px;
   }
 
-  .menu__list-item > a::after{
-    content: '';
-    position: absolute;
-    background-color: var(--first-color);
-    height: 3px;
-    width: 0;
-    left: 0;
-    bottom: -10px;
-    transition: .3s;
-  }
-
-  .menu__list-item > a:hover::after {
-    width: 100%;
+  .menu__list-item > a:hover {
+    border-bottom: 3px solid var(--first-color);
   }
 
 /* btn */
