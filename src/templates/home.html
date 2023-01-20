@@ -5,7 +5,20 @@
 
 
 {% block body%} 
-<h1>Home</h1> 
-<A HREF="{{ url_for('login') }}"> login </A>
+<header class="header">
+    <!-- LOGO -->
+    <a href="#" class="header__logo">
+        <img src="/TeacherData/src/static/img/logo/logo.png" alt="logo del ministerio de educación">
+    </a>
+    <nav class="header__menu">
+        <ul class="menu__list">
+            <li class="menu__list-item">Inicio</li>
+            <li class="menu__list-item">Información</li>
+            <li class="menu__list-item">Noticias</li>
+            <li class="menu__list-item">Ayuda</li>
+        </ul>
+    </nav>
+    <button class="header__btn">Ingresar</button>
+</header>
 
 {% endblock %}
