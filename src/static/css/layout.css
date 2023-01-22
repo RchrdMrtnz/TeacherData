@@ -107,7 +107,7 @@ a{
 }
 
 .slider{
-  padding: 40px 0;
+  padding: 100px 0;
 }
 
 .slider__container {
@@ -126,6 +126,8 @@ a{
   grid-template-columns: 1fr max-content;
   align-items: center;
   transition: opacity 1.5s;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .slider__body-show {
@@ -133,7 +135,11 @@ a{
 }
 
 .slider__texts {
-  max-width: 350px;
+  max-width: 450px;
+}
+
+.review__span{
+text-decoration: underline var(--first-color);
 }
 
 .slider__subtitle {
@@ -166,6 +172,7 @@ a{
 .slider__slide {
   display: flex;
   justify-content: center;
+  margin-top: 80px;
 }
 
 .slide__swiper{
