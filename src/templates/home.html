@@ -29,14 +29,14 @@
 <section class="slider">
     <div class="slider__container container">
     <!--Arrow left-->
-        <img src="{{ url_for('static',filename='img/slider__home-page/arrow-left-solid.svg') }}" alt="arrow-left"> 
+    <i class="fa-solid fa-arrow-left slider__icon"></i>
 
     <!--Section slider 1-->
-        <section class="slider__body" data-id="1">
+        <section class="slider__body slider__body-show" data-id="1">
             <div class="slider__texts">
-                <h2 class="slider__subtitle"></h2>
+                <h2 class="slider__subtitle">¡Feliz día del maestro!</h2>
                 <p class="slider__review">
-
+                    Nuestro mayor agradecimiento, amor y admiración a todo nuestro personal, quienes continúan inspirando a nuestros jovenes.
                 </p>
             </div>
 
@@ -48,9 +48,9 @@
     <!--Section slider 2-->
                 <section class="slider__body" data-id="2">
                     <div class="slider__texts">
-                        <h2 class="slider__subtitle"></h2>
+                        <h2 class="slider__subtitle">Respetemos las medidas de bioseguridad dentro y fuera del aula</h2>
                         <p class="slider__review">
-        
+                            Existen muchas formas en que tus acciones pueden ayudar a <span>protegerte a ti y a tu familia</span> de enfermarse gravemente a causa del COVID-19.
                         </p>
                     </div>
         
@@ -62,9 +62,9 @@
     <!--Section slider 3-->
         <section class="slider__body" data-id="3">
             <div class="slider__texts">
-                <h2 class="slider__subtitle"></h2>
+                <h2 class="slider__subtitle">Gran apertura de Kinderbell</h2>
                 <p class="slider__review">
-
+                    Seguimos garantizando el derecho de nuestros jóvenes a tener educación gratuita y de calidad desde sus primeras etapas de desarrollo
                 </p>
             </div>
 
@@ -72,9 +72,17 @@
                 <img src="{{ url_for('static',filename='img/slider__home-page/slider__img-3.jpg') }}" alt="">
             </figure>
         </section>
-            <!--Arrow right-->
-       <img src="{{ url_for('static',filename='img/slider__home-page/arrow-right-solid.svg') }}" alt="arrow-right"> 
-    </div>
+
+        <!--Arrow right-->
+            <i class="fa-solid fa-arrow-right slider__icon"></i>
+            </div>
+            <!--swiper -->
+        <div class="slider__slide">
+            <span class="slide__swiper active"></span>
+            <span class="slide__swiper"></span>
+            <span class="slide__swiper"></span>
+        </div>
+        
 </section>
 
 
