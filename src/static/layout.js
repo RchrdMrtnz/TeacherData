@@ -2,8 +2,9 @@
     const sliders = [...document.querySelectorAll('.slider__body')];
     const arrowNext = document.querySelector('#next');
     const arrowBefore = document.querySelector('#before');
+    const swiper = document.querySelectorAll('.slide__swiper');
     let value = 0;
-    
+
     arrowNext.addEventListener('click', ()=> changePosition(1));
     arrowBefore.addEventListener('click', ()=>changePosition(-1));
 
@@ -19,5 +20,12 @@
     
         sliders[currentElement-1].classList.toggle('slider__body-show');
         sliders[value-1].classList.toggle('slider__body-show');
+
+        for (let i = 0; i < swiper.length; i++) {
+        swiper[i].className = swiper[i].className.replace(" active", ""); }
+
+        swiper[value-1].className += " active";
+
     }
+    
 })()
