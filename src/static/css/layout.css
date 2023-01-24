@@ -45,7 +45,6 @@ a{
     align-items: center;
     padding: 30px 10px;
     height: 80px;
-    background-color: #EEEEEE;
   }
 
   .header__logo > img{
@@ -100,8 +99,6 @@ a{
 
 /** SLIDER **/
 
-
-
 .container {
   width: 90%;
   max-width: 1200px;
@@ -110,8 +107,7 @@ a{
 }
 
 .slider{
-  padding: 100px 0;
-  background-color: #EEEEEE;
+  padding: 70px 0;
 }
 
 .slider__container {
@@ -140,6 +136,7 @@ a{
 
 .slider__texts {
   max-width: 480px;
+  margin-right: 20px;
 }
 
 .review__span {
@@ -152,7 +149,7 @@ font-weight: 400;
 }
 
 .slider__subtitle {
-  font-size: 36px;
+  font-size: 32px;
   margin-bottom: 20px;
   color: var(--text-color);
   font-family: 'Noto Serif Toto', serif;
@@ -167,8 +164,8 @@ font-weight: 400;
 
 
 .slider__img > img {
-  width: 430px;
-  height: 430px;
+  width: 400px;
+  height: 400px;
   border-radius: 50%;
   object-fit: cover;
   margin: 0 auto;
@@ -200,3 +197,68 @@ font-weight: 400;
   background: var(--first-color);
   width: 35px;
 }
+
+/**END SLIDER**/
+
+/**INFORMACIÓN**/
+
+.info__container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px 10px;
+  height: 50px;
+  background-color: #EEEEEE;
+  border-radius: 50px;
+  margin: 0 auto;
+  -webkit-box-shadow: 0px 3px 15px -3px rgba(0,0,0,0.77); 
+  box-shadow: 0px 2px 15px -3px rgba(0,0,0,0.45);
+}
+
+.info__item {
+  padding: 0 30px;
+  font-size: 12px;
+  width: 90px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info__item-link{
+  text-align: center;
+}
+
+.info__item-link:hover > .info__item-box {
+background-color: var(--first-color);
+}
+
+.info__item-link:hover > .info__item-box > i{
+  color: #FFF;
+}
+
+.info__item-box {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  border: 2px solid #ddd;
+}
+
+.info__item-icon {
+  font-size: var(--default);
+  color: var(--first-color);
+}
+
+.info__item-box-2 {
+  margin-top: 20px;
+}
+
+.info__item-box-2 > h3 {
+  color: var(--text-color);
+  font-weight: 400;
+}
+/**END INFORMACIÓN**/
