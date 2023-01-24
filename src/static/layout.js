@@ -22,7 +22,8 @@
         sliders[value-1].classList.toggle('slider__body-show');
 
         for (let i = 0; i < swiper.length; i++) {
-        swiper[i].className = swiper[i].className.replace(" active", ""); }
+        swiper[i].className = swiper[i].className.replace(" active", ""); 
+        }
 
         swiper[value-1].className += " active";
 
