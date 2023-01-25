@@ -25,8 +25,13 @@
         swiper[i].className = swiper[i].className.replace(" active", ""); 
         }
 
-        swiper[value-1].className += " active";
+        swiper[value - 1].className += " active";
 
     }
+
+    setInterval(changePosition, 5000, 1);
+
+   
     
 })()
+
