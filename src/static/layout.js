@@ -32,6 +32,6 @@
     }
 
     /* slider automatico */
-    setInterval(changePosition, 5000, 1);
+    setInterval(changePosition, 10000, 1);
 })()
 

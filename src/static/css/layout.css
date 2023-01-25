@@ -190,7 +190,7 @@ font-weight: 400;
   width: 10px;
   border-radius: 25px;
   background: var(--second-color);
-  transition: .5s;
+  transition: .9s;
 }
 
 .active {
