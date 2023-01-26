@@ -25,7 +25,6 @@
 </header>
 
 <!--*SLIDER - INICIO*-->
-
 <section class="slider">
     <div class="slider__container container">
     <!--Arrow left-->
@@ -35,7 +34,7 @@
         <section class="slider__body  slider__body-show" data-id="1">
             <div class="slider__texts">
                 <h2 class="slider__subtitle slider__subtitle-color">¡Feliz regreso a clase!</h2>
-                <span class="slider__review">
+                <p class="slider__review">
                     Sea nuevamente bienvenido nuestro preciado personal docente y administrativo pertenecientas al <span class="review__comment">Ministerio de Educación de Venezuela</span>.
                 </p>
             </div>
@@ -86,7 +85,6 @@
 </section>
 
 <!--*INFORMACIÓN*-->
-
 <section class="informacion">
     <div class="info__container">
         <!--info item 1-->
@@ -152,4 +150,43 @@
     </div>
 </section>
 
+<!--*NOTICIAS*-->
+<section class="noticias">
+    <div class="noticias__text">
+        <h2>Noticias relevantes para ti</h2>
+        <h3>Las últimas novedades sobre el Ministerio de Educación</h3>    
+    </div>
+    <div class="noticias__container">
+        <!--Noticia item 1-->
+        <section class="noticia__item noticia__item-show">
+                    <img src="{{ url_for('static',filename='img/noticias/noticias_1.jpg') }}" alt="">
+
+                <div class="noticia__box">
+                    <span class="noticias__box-numeral">#Noticia</span>
+                    <p class="noticias__box-info">Unicef alerta sobre bajos niveles de aprendizaje y abandono escolar tras dos años de pandemia</p>
+                    <button class="noticias__box-btn">Leer más</button>
+                </div>
+        </section>
+        <!--Noticia item 2-->
+        <section class="noticia__item">
+                <img src="{{ url_for('static',filename='img/noticias/noticias_2.jpg') }}" alt="">
+
+            <div class="noticia__box">
+                <span class="noticias__box-numeral">#Noticia</span>
+                <p class="noticias__box-info">Señales para reconocer la dislexia en niños</p>
+                <button class="noticias__box-btn">Leer más</button>
+            </div>
+    </section>
+    <!--Noticia item 3-->
+    <section class="noticia__item">
+            <img src="{{ url_for('static',filename='img/noticias/noticias_3.jpg') }}" alt="">
+            
+        <div class="noticia__box">
+            <span class="noticias__box-numeral">#Noticia</span>
+            <p class="noticias__box-info">Las cifras que reflejan la crisis educativa en el estado Zulia</p>
+            <button class="noticias__box-btn">Leer más</button>
+        </div>
+</section>
+    </div>
+</section>
 {% endblock %}
