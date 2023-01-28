@@ -14,10 +14,10 @@
     <!-- NAV -->
     <nav class="header__menu">
         <ul class="menu__list">
-            <li class="menu__list-item"><a href="#">Inicio</a></li>
-            <li class="menu__list-item"><a href="#">Información</a></li>
-            <li class="menu__list-item"><a href="#">Noticias</a></li>
-            <li class="menu__list-item"><a href="#">Ayuda</a></li>
+            <li class="menu__list-item"><a href="#inicio">Inicio</a></li>
+            <li class="menu__list-item"><a href="#informacion">Información</a></li>
+            <li class="menu__list-item"><a href="#noticias">Noticias</a></li>
+            <li class="menu__list-item"><a href="#support">Ayuda</a></li>
         </ul>
     </nav>
     <!-- BTN -->
@@ -25,7 +25,7 @@
 </header>
 
 <!--*SLIDER - INICIO*-->
-<section class="slider">
+<section class="slider" id="inicio">
     <div class="slider__container container">
     <!--Arrow left-->
     <i class="fa-solid fa-arrow-left slider__icon" id="before"></i>
@@ -85,7 +85,7 @@
 </section>
 
 <!--*INFORMACIÓN*-->
-<section class="informacion">
+<section class="informacion" id="informacion">
     <div class="info__container">
         <!--info item 1-->
         <div class="info__item">
@@ -151,7 +151,7 @@
 </section>
 
 <!--*NOTICIAS*-->
-<section class="noticias">
+<section class="noticias" id="noticias">
     <div class="noticias__text">
         <h2>Noticias relevantes para ti</h2>
         <h3>Las últimas novedades sobre el Ministerio de Educación</h3>    
@@ -187,6 +187,45 @@
             <button class="noticias__box-btn">Leer más</button>
         </div>
 </section>
+    </div>
+</section>
+
+<!--*SOPORTE EN LÍNEA*-->
+<section class="support" id="support">
+    <div class="support__text">
+        <h2>Soporte en línea</h2>
+    </div>
+    <div class="support__container">
+        <!--Support item 1-->
+        <section class="support__item">
+            <div class="item__circle">
+                <img src="{{ url_for('static',filename='img/support/support_1.png') }}" alt="agente-de-llamadas">
+            </div>
+            <div class="item__text">
+                <h2>Atención al cliente</h2>
+                <p>Si tiene alguna duda o consulta puede realizarla con nuestro personal capacitado</p>
+            </div>
+        </section>
+        <!--Support item 2-->
+        <section class="support__item">
+            <div class="item__circle">
+                <img src="{{ url_for('static',filename='img/support/support_2.png') }}" alt="aprentón-de-manos">
+            </div>
+            <div class="item__text">
+                <h2>Bloqueo/desbloqueo de usuario</h2>
+                <p>Si tiene alguna duda o consulta puede realizarla con nuestro personal capacitado</p>
+            </div>
+        </section>
+        <!--Support item 3-->
+        <section class="support__item">
+            <div class="item__circle">
+                <img src="{{ url_for('static',filename='img/support/support_3.png') }}" alt="teléfono">
+            </div>
+            <div class="item__text">
+                <h2>Línea de ayuda - 0500 5087432</h2>
+                <p>Si tiene alguna duda o consulta puede realizarla con nuestro personal capacitado</p>
+            </div>
+        </section>
     </div>
 </section>
 {% endblock %}
