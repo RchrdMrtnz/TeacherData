@@ -4,12 +4,13 @@
 
 
 
-{% block body%} 
+{% block body%}
 <!--*HEADER*-->
-<header class="header">
+<header class="header" id="inicio">
     <!-- LOGO -->
     <a href="#" class="header__logo">
-        <img src="{{ url_for('static',filename='img/logo/logo.png') }}" alt="logo del ministerio de educación" class="header__logo-img">
+        <img src="{{ url_for('static',filename='img/logo/logo.png') }}" alt="logo del ministerio de educación"
+            class="header__logo-img">
     </a>
     <!-- NAV -->
     <nav class="header__menu">
@@ -25,17 +26,18 @@
 </header>
 
 <!--*SLIDER - INICIO*-->
-<section class="slider" id="inicio">
+<section class="slider">
     <div class="slider__container container">
-    <!--Arrow left-->
-    <i class="fa-solid fa-arrow-left slider__icon" id="before"></i>
+        <!--Arrow left-->
+        <i class="fa-solid fa-arrow-left slider__icon" id="before"></i>
 
-    <!--Section slider 1-->
+        <!--Section slider 1-->
         <section class="slider__body  slider__body-show" data-id="1">
             <div class="slider__texts">
                 <h2 class="slider__subtitle slider__subtitle-color">¡Feliz regreso a clase!</h2>
                 <p class="slider__review">
-                    Sea nuevamente bienvenido nuestro preciado personal docente y administrativo pertenecientas al <span class="review__comment">Ministerio de Educación de Venezuela</span>.
+                    Sea nuevamente bienvenido nuestro preciado personal docente y administrativo pertenecientas al <span
+                        class="review__comment">Ministerio de Educación de Venezuela</span>.
                 </p>
             </div>
 
@@ -44,26 +46,30 @@
             </figure>
         </section>
 
-    <!--Section slider 2-->
-                <section class="slider__body" data-id="2">
-                    <div class="slider__texts">
-                        <h2 class="slider__subtitle">Respetemos las <span class="review__span"> medidas de bioseguridad</span> dentro y fuera del aula</h2>
-                        <p class="slider__review">
-                            Existen muchas formas en que tus acciones pueden ayudar a protegerte a ti y a tu familia de enfermarse gravemente a causa del <span class="review__comment">COVID-19</span>.
-                        </p>
-                    </div>
-        
-                    <figure class="slider__img">
-                        <img src="{{ url_for('static',filename='img/slider__home-page/slider__img-2.jpg') }}" alt="">
-                    </figure>
-                </section>
+        <!--Section slider 2-->
+        <section class="slider__body" data-id="2">
+            <div class="slider__texts">
+                <h2 class="slider__subtitle">Respetemos las <span class="review__span"> medidas de bioseguridad</span>
+                    dentro y fuera del aula</h2>
+                <p class="slider__review">
+                    Existen muchas formas en que tus acciones pueden ayudar a protegerte a ti y a tu familia de
+                    enfermarse gravemente a causa del <span class="review__comment">COVID-19</span>.
+                </p>
+            </div>
 
-    <!--Section slider 3-->
+            <figure class="slider__img">
+                <img src="{{ url_for('static',filename='img/slider__home-page/slider__img-2.jpg') }}" alt="">
+            </figure>
+        </section>
+
+        <!--Section slider 3-->
         <section class="slider__body" data-id="3">
             <div class="slider__texts">
-                <h2 class="slider__subtitle">Garantizamos el derecho de nuestros jóvenes a tener <span class="review__span">educación gratuita y de calidad</span></h2>
+                <h2 class="slider__subtitle">Garantizamos el derecho de nuestros jóvenes a tener <span
+                        class="review__span">educación gratuita y de calidad</span></h2>
                 <p class="slider__review">
-                    Este lunes 30 de enero de 2023, se hará la gran apertura del nuevo jardín de infantes. Si desea ser parte de nuestro personal <span class="review__comment">ingrese aquí</span>.
+                    Este lunes 30 de enero de 2023, se hará la gran apertura del nuevo jardín de infantes. Si desea ser
+                    parte de nuestro personal <span class="review__comment">ingrese aquí</span>.
                 </p>
             </div>
 
@@ -73,15 +79,15 @@
         </section>
 
         <!--Arrow right-->
-            <i class="fa-solid fa-arrow-right slider__icon" id="next"></i>
-            </div>
-            <!--swiper -->
-        <div class="slider__slide">
-            <span class="slide__swiper active"></span>
-            <span class="slide__swiper"></span>
-            <span class="slide__swiper"></span>
-        </div>
-        
+        <i class="fa-solid fa-arrow-right slider__icon" id="next"></i>
+    </div>
+    <!--swiper -->
+    <div class="slider__slide">
+        <span class="slide__swiper active"></span>
+        <span class="slide__swiper"></span>
+        <span class="slide__swiper"></span>
+    </div>
+
 </section>
 
 <!--*INFORMACIÓN*-->
@@ -92,9 +98,9 @@
             <a href="#" class="info__item-link">
                 <div class="info__item-box">
                     <i class="fa-regular fa-file info__item-icon"></i></div>
-                    <div class="info__item-box-2">
-                        <h3 class="info__item-text">Planillas y formatos</h3>
-                    </div>
+                <div class="info__item-box-2">
+                    <h3 class="info__item-text">Planillas y formatos</h3>
+                </div>
             </a>
         </div>
         <!--info item 2-->
@@ -102,9 +108,9 @@
             <a href="#" class="info__item-link">
                 <div class="info__item-box">
                     <i class="fa-regular fa-flag info__item-icon"></i></div>
-                    <div class="info__item-box-2">
-                        <h3 class="info__item-text">Misión</h3>
-                    </div>
+                <div class="info__item-box-2">
+                    <h3 class="info__item-text">Misión</h3>
+                </div>
             </a>
         </div>
         <!--info item 3-->
@@ -112,9 +118,9 @@
             <a href="#" class="info__item-link">
                 <div class="info__item-box">
                     <i class="fa-solid fa-bullseye info__item-icon"></i></div>
-                    <div class="info__item-box-2">
-                        <h3 class="info__item-text">Visión</h3>
-                    </div>
+                <div class="info__item-box-2">
+                    <h3 class="info__item-text">Visión</h3>
+                </div>
             </a>
         </div>
         <!--info item 4-->
@@ -122,9 +128,9 @@
             <a href="#" class="info__item-link">
                 <div class="info__item-box">
                     <i class="fa-regular fa-bell info__item-icon"></i></div>
-                    <div class="info__item-box-2">
-                        <h3 class="info__item-text">Atención al ciudadano</h3>
-                    </div>
+                <div class="info__item-box-2">
+                    <h3 class="info__item-text">Atención al ciudadano</h3>
+                </div>
             </a>
         </div>
         <!--info item 5-->
@@ -132,9 +138,9 @@
             <a href="#" class="info__item-link">
                 <div class="info__item-box">
                     <i class="fa-solid fa-thumbtack info__item-icon"></i></div>
-                    <div class="info__item-box-2">
-                        <h3 class="info__item-text">Proyectos</h3>
-                    </div>
+                <div class="info__item-box-2">
+                    <h3 class="info__item-text">Proyectos</h3>
+                </div>
             </a>
         </div>
         <!--info item 6-->
@@ -142,9 +148,9 @@
             <a href="#" class="info__item-link">
                 <div class="info__item-box">
                     <i class="fa-solid fa-bullhorn info__item-icon"></i></div>
-                    <div class="info__item-box-2">
-                        <h3 class="info__item-text">Comunicados</h3>
-                    </div>
+                <div class="info__item-box-2">
+                    <h3 class="info__item-text">Comunicados</h3>
+                </div>
             </a>
         </div>
     </div>
@@ -154,39 +160,40 @@
 <section class="noticias" id="noticias">
     <div class="noticias__text">
         <h2>Noticias relevantes para ti</h2>
-        <h3>Las últimas novedades sobre el Ministerio de Educación</h3>    
+        <h3>Las últimas novedades sobre el Ministerio de Educación</h3>
     </div>
     <div class="noticias__container">
         <!--Noticia item 1-->
         <section class="noticia__item noticia__item-show">
-                    <img src="{{ url_for('static',filename='img/noticias/noticias_1.jpg') }}" alt="">
+            <img src="{{ url_for('static',filename='img/noticias/noticias_1.jpg') }}" alt="">
 
-                <div class="noticia__box">
-                    <span class="noticias__box-numeral">#Noticia</span>
-                    <p class="noticias__box-info">Unicef alerta sobre bajos niveles de aprendizaje y abandono escolar tras dos años de pandemia</p>
-                    <button class="noticias__box-btn">Leer más</button>
-                </div>
+            <div class="noticia__box">
+                <span class="noticias__box-numeral">#Noticia</span>
+                <p class="noticias__box-info">Unicef alerta sobre bajos niveles de aprendizaje y abandono escolar tras
+                    dos años de pandemia</p>
+                <button class="noticias__box-btn">Leer más</button>
+            </div>
         </section>
         <!--Noticia item 2-->
         <section class="noticia__item">
-                <img src="{{ url_for('static',filename='img/noticias/noticias_2.jpg') }}" alt="">
+            <img src="{{ url_for('static',filename='img/noticias/noticias_2.jpg') }}" alt="">
 
             <div class="noticia__box">
                 <span class="noticias__box-numeral">#Noticia</span>
                 <p class="noticias__box-info">Señales para reconocer la dislexia en niños</p>
                 <button class="noticias__box-btn">Leer más</button>
             </div>
-    </section>
-    <!--Noticia item 3-->
-    <section class="noticia__item">
+        </section>
+        <!--Noticia item 3-->
+        <section class="noticia__item">
             <img src="{{ url_for('static',filename='img/noticias/noticias_3.jpg') }}" alt="">
-            
-        <div class="noticia__box">
-            <span class="noticias__box-numeral">#Noticia</span>
-            <p class="noticias__box-info">Las cifras que reflejan la crisis educativa en el estado Zulia</p>
-            <button class="noticias__box-btn">Leer más</button>
-        </div>
-</section>
+
+            <div class="noticia__box">
+                <span class="noticias__box-numeral">#Noticia</span>
+                <p class="noticias__box-info">Las cifras que reflejan la crisis educativa en el estado Zulia</p>
+                <button class="noticias__box-btn">Leer más</button>
+            </div>
+        </section>
     </div>
 </section>
 
@@ -228,4 +235,59 @@
         </section>
     </div>
 </section>
+
+<!--*FOOTER*-->
+<footer class="footer">
+    <div class="footer__container">
+        <!--footer item 1-->
+        <section class="footer__item">
+            <img src="{{ url_for('static',filename='img/logo/logo-white-bg.png') }}" alt="logo">
+            <div class="item__text-footer">
+                <h2>Ministerio del Poder Popular para la Educación de Venezuela</h2>
+            </div>
+            <div class="footer__icon">
+                <span class="icon__circle">
+                    <i class="fa-brands fa-twitter"></i>
+                </span>
+                <span class="icon__circle">
+                    <i class="fa-brands fa-instagram"></i>
+                </span>
+                <span class="icon__circle">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </span>
+            </div>
+        </section>
+        <!--footer item 2-->
+        <section class="footer__item">
+            <div class="menu__footer">
+                <h2>Menú</h2>
+                <ul class="footer__list">
+                    <li><a href="#inicio">- Inicio</a></li>
+                    <li><a href="#información">- Información</a></li>
+                    <li><a href="#noticias">- Noticias</a></li>
+                    <li><a href="#ayuda">- Ayuda</a></li>
+                </ul>
+            </div>
+        </section>
+        <!--footer item 3-->
+        <section class="footer__item">
+            <div class="footer__contacto">
+                <h2>Contacto</h2>
+                <div class="footer__item-contacto">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span class="item__contacto-email">mineeduc@gmail.com</span>
+                </div>
+                <div class="footer__item-contacto"><i class="fa-solid fa-phone"></i> 0500 - 5087432
+                </div>
+                <div class="footer__item-contacto direccion__box"><i class="fa-solid fa-location-dot"></i> G25M+9WF, Avenida Oeste 5,
+                    Caracas 1010, Distrito Capital
+                </div>
+            </div>      
+        </section>
+    </div>
+    <!--copyright-->
+    <div class="footer__copy">
+        <h2>© 2023 Ministerio del Poder Popular para la Educación | Todos los derechos reservados | 0500 - 5087432</h2>
+    </div>
+</footer>
 {% endblock %}
