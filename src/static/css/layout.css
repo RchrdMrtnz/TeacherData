@@ -318,7 +318,7 @@ background-color: var(--first-color);
   padding-top: 10px;
 }
 
-.noticia__box:hover {
+.noticia__item:hover > .noticia__box{
   -webkit-box-shadow: 0px 8px 18px -3px rgba(0,0,0,0.27); 
 box-shadow: 0px 8px 18px -3px rgba(0,0,0,0.27);
 }
