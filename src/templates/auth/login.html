@@ -3,20 +3,75 @@
 {% block title%} login {% endblock %}
 
 {% block body%} 
-<form class="form-signin" action="/login" method="POST">
-    <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
-    <input type="hidden">
-    <div>
-    <input type="text" id="username" name="username" placeholder="Username">
-    <label for="username">Username</label>
+<!--*LOGIN*-->
+<section class="form-login">
+    <!--Form-->
+<div class="container__form" id="container">
+    <div class="form-container sign-up-container">
+        <form action="#">
+            <h1 class="form__title">Crear cuenta</h1>
+            <h3 class="form__sub">Usa tus datos personales para el registro</h3>
+            <div class="infield">
+                <i class="fa-solid fa-user"></i>
+                <input type="text" placeholder="Cédula de identidad" />
+                <label></label>
+            </div>
+            <div class="infield">
+                <i class="fa-solid fa-envelope"></i>
+                <input type="email" placeholder="Correo eléctronico" name="email"/>
+            </div>
+            <div class="infield">
+                <i class="fa-solid fa-phone"></i>
+                <input type="password" placeholder="Teléfono" />
+                <label></label>
+            </div>
+            <div class="infield">
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" placeholder="Contraseña" />
+                <label></label>
+            </div>
+            <div class="infield">
+                <i class="fa-regular fa-circle-check"></i>
+                <input type="password" placeholder="Confirme su contraseña" />
+                <label></label>
+            </div>
+            <button>Registrarse</button>
+        </form>
     </div>
-    <div>
-    <input type="password" id="password" name="password" placeholder="Password">
-    <label for="password">Password</label>
+    <div class="form-container sign-in-container">
+        <form action="#">
+            <h1 class="form__title">Iniciar sesión</h1>
+            <h3 class="form__sub">Ingresa tus datos de registro</h3>
+            <div class="infield">
+                <i class="fa-solid fa-user"></i>
+                <input type="email" placeholder="Cédula de identidad" name=""/>
+                <label></label>
+            </div>
+            <div class="infield">
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" placeholder="Contraseña" />
+                <label></label>
+            </div>
+            <a href="#" class="forgot">¿Olvidaste tu contraseña?</a>
+            <button>Ingresar</button>
+        </form>
     </div>
-    <button type="submit">Sign in</button>
-</form>
-
-{%if data.nouser%}<div> usuario o clave invalido </div>{%endif%}
-
+    <!--Overlay-->
+    <div class="overlay-container" id="overlayCon">
+        <div class="overlay">
+            <div class="overlay-panel overlay-left">
+                <h1>¡Bienvenido!</h1>
+                <p>Para mantenerse conectado con nosotros, inicie sesión con su información personal</p>
+                <button class="overlay__btn">Iniciar sesión</button>
+            </div>
+            <div class="overlay-panel overlay-right">
+                <h1>¡Hola :)!</h1>
+                <p>Ingresa tus datos personales para acceder a nuestro sistema</p>
+                <button class="overlay__btn">Registrarse</button>
+            </div>
+        </div>
+        <button id="overlayBtn"></button>
+    </div>
+</div>
+</section>
 {% endblock %}
